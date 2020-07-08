@@ -32,9 +32,6 @@ function App() {
     return (
         <div className="App">
             <h1>Поиск фильмов</h1>
-
-            {console.log(length)}
-            {console.log(films)}
             <TextField label="Фильмы" value={val} onChange={handleChange}/>
             {!!films.length && films.map((film, index) =>index < length?<Film key={film.filmId} film={film}/> : undefined)}
             {films.length - length > 0 &&<div className={'showMore'}>
