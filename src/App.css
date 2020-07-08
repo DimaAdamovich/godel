@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.filmItem{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-auto-rows: 200px;
+  margin: 10px auto;
+  width: 800px;
+
+}
+.filmItem img{
+  width: 200px;
+  height: 200px;
+}
+.showMore{
+  margin: 20px;
+}
